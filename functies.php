@@ -59,7 +59,7 @@ function AanvragenBrochure($aanvraag_gegevens) {
 			//Server settings
 			$mail->SMTPDebug = 2;                                 // Enable verbose debug output
 			$mail->isSMTP();                                      // Set mailer to use SMTP
-			$mail->Host = '192.168.1.24';  // Specify main and backup SMTP servers
+			$mail->Host = '[fc00:aaaa:bbbb:cccc::14]';  // Specify main and backup SMTP servers
 			$mail->SMTPAuth = true;                               // Enable SMTP authentication
 			$mail->Username = 'student@mail.groep4.local';                 // SMTP username
 			$mail->Password = 'Groep4!';                           // SMTP password
