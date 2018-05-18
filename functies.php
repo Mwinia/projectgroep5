@@ -63,8 +63,16 @@ function AanvragenBrochure($aanvraag_gegevens) {
 			$mail->SMTPAuth = true;                               // Enable SMTP authentication
 			$mail->Username = 'student@mail.groep4.local';                 // SMTP username
 			$mail->Password = 'Groep4!';                           // SMTP password
-			$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+			$mail->SMTPSecure = 'starttls';                            // Enable TLS encryption, `ssl` also accepted
 			$mail->Port = 25;                                    // TCP port to connect to
+			
+			$mail->SMTPOptions = array(
+				'ssl' => array(
+					'verify_peer' => false,
+					'verify_peer_name' => false,
+					'allow_self_signed' => true
+					)
+					);
 	
 			//Recipients
             $mail->setFrom('brochure@windesheim.nl', 'Windesheim');
