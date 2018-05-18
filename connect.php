@@ -1,7 +1,7 @@
 <?php
 
 // Gegevens voor de database connectie
-$host = "192.168.1.23";
+$host = "[fc00:aaaa:bbbb:cccc::13]";
 $user = "root";
 $password = "Groep4!";
 $database = "brochure";
