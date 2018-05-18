@@ -1,10 +1,10 @@
 <?php
 
 // Gegevens voor de database connectie
-$host = "localhost";
-$user = "u5329p19512_root";
-$password = "vuJzn7H9dO";
-$database = "u5329p19512_brochure";
+$host = "192.168.1.23";
+$user = "root";
+$password = "Groep4!";
+$database = "brochure";
 $port = "3306";
 
 // Connectie maken
