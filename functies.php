@@ -61,7 +61,7 @@ function AanvragenBrochure($aanvraag_gegevens) {
 			$mail->isSMTP();                                      // Set mailer to use SMTP
 			$mail->Host = '[fc00:aaaa:bbbb:cccc::14]';  // Specify main and backup SMTP servers
 			$mail->SMTPAuth = true;                               // Enable SMTP authentication
-			$mail->Username = 'student';                 // SMTP username
+			$mail->Username = 'groep4';                 // SMTP username
 			$mail->Password = 'Groep4!';                           // SMTP password
 			$mail->SMTPSecure = 'starttls';                            // Enable TLS encryption, `ssl` also accepted
 			$mail->Port = 25;                                    // TCP port to connect to
