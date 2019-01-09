@@ -12,7 +12,8 @@
 	$stmt = $pdo->prepare("INSERT INTO persoon (voornaam, achternaam) VALUES (?, ?)");
 	$stmt->execute(array($voornaam, $achternaam));
  }
- 
+
+ ?>
  
  
  <html>
