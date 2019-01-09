@@ -6,8 +6,8 @@
  if (isset($_POST["submit"])) {
 	
 	// Persoonsgegevens definieren
-	$voornaam = filter_input(INPUT_POST,"voornaam"));
-	$achternaam = filter_input(INPUT_POST,"achternaam"));
+	$voornaam = filter_input(INPUT_POST,"voornaam");
+	$achternaam = filter_input(INPUT_POST,"achternaam");
 	
 	$stmt = $pdo->prepare("INSERT INTO persoon (voornaam, achternaam) VALUES (?, ?)");
 	$stmt->execute(array($voornaam, $achternaam));
