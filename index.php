@@ -9,7 +9,7 @@
 	$voornaam = filter_input(INPUT_POST,"voornaam"));
 	$achternaam = filter_input(INPUT_POST,"achternaam"));
 	
-	$stmt = $pdo->prepare("INSERT INTO persoon (voornaam, achternaam) VALUES (?, ?)";
+	$stmt = $pdo->prepare("INSERT INTO persoon (voornaam, achternaam) VALUES (?, ?)");
 	$stmt->execute(array($voornaam, $achternaam));
  }
  
@@ -20,7 +20,7 @@
 <form action="index.php" method="POST">
  <p>Voornaam: <input type="text" name="voornaam" /></p>
  <p>Achternaam: <input type="text" name="achternaam" /></p>
- <p><input type="submit" /></p>
+ <p><input type="submit"/></p>
 </form>
 
 </html>
